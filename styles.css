@@ -265,9 +265,10 @@ hr{
 {
     color: white;
 }
-    .links a i:active{
+
+.links a i:active{
     
-  box-shadow: 3px 2px 2px blue;
+    color: white;
 }
 
 /*FOOTER LINKS*/
@@ -314,6 +315,7 @@ footer
 }
 
 
+
 @media(max-width:1050px)
 {
 
@@ -330,7 +332,7 @@ footer
         opacity: .9;
         transform: translateX(-400px);
         transition:transform .5s ease-in-out;
-       
+        height:100%;
 
     }
     .nav-main ul.nav-menu.show
@@ -339,11 +341,8 @@ footer
     }
     .nav-main ul .nav-menu li
     {
-       
         padding: 30px;
-       font-size: 14px;
-       
-
+        font-size: 14px;
     }
     .nav-main ul.nav-menu-right
     {
