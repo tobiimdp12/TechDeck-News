@@ -227,16 +227,19 @@ hr{
  .cards-banner-two p,.cards-banner-two h2
  {
     margin: 10px 0 20px 0;
+    
  }
 
  /*soclal*/
  .social
  {
-     margin: 50px;
+    margin: 50px;
+    
  }
  .social p
  {
-    text-align: center;
+    display: flex;
+    justify-content:center;
     font-size: 30px;
     margin: 50px;
  }
@@ -247,12 +250,24 @@ hr{
     display: flex;
     align-items:center;
     justify-content: space-around;
-    
+
  }
 
 .links a i{
-    
+   
     font-size: 40px;
+    color: rgb(134, 127, 127);
+    transition:.5s ;
+    
+}
+
+.links a i:hover
+{
+    color: white;
+}
+    .links a i:active{
+    
+  box-shadow: 3px 2px 2px blue;
 }
 
 /*FOOTER LINKS*/
@@ -410,6 +425,7 @@ footer
     }
     .new-news img
     {
+        margin-top: 35px;
         height: 280px;
     }
     .cards-banner-one .content,.cards-banner-two .content
@@ -423,5 +439,18 @@ footer
         grid-template-columns: 1fr;
     }
 
-    
+    .social p
+    {
+        text-align: center;
+    }
+}
+
+@media(max-width:300px)
+{
+   
+    .new-news img
+    {
+        margin-top: 130px;
+        
+    }
 }
